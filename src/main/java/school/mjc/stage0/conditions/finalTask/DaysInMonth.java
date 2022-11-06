@@ -18,7 +18,7 @@ public class DaysInMonth {
             case 11: Calendar.NOVEMBER; break;
             case 12: Calendar.DECEMBER; break;
         }*/
-        if(year > 0) {
+        if(year > 0 && month > 0 && month <= 12) {
             Calendar mycal = new GregorianCalendar(year, month-1,1);
             int days = mycal.getActualMaximum(Calendar.DAY_OF_MONTH);
             System.out.println(days);
